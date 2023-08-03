@@ -1,0 +1,28 @@
+body {
+color: rgb(0, 205, 95);
+text-align: center;
+background-image: url(fon1.jpeg);
+background-size: cover;
+background-position: top center;
+background-attachment: fixed;
+}
+
+table,th,td{
+  border: 1px solid white;
+  text-align:center;
+}
+
+th,td{
+   padding:10px;
+   font-size:20px;
+}
+caption{
+  font-size:40px;
+  color: red;
+}
+.tcont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*height: 200vh; /* Налаштуйте висоту відповідно до вашої потреби */
+}

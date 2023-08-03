@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'adminkaDrivers/css/list.css' %}">
+    <title>Маршрути</title>
+</head>
+<body>
+
+<div class="tcont">
+  <table>
+
+        <caption>Таблиця маршрутів</caption>
+        <thead>
+           <tr>
+                <th>Driver</th>
+                <th>dataOfStartRoute</th>
+                <th>Summ</th>
+               <th>allowed</th>
+               <th>Text</th>
+
+           </tr>
+            {% for r in db %}
+           <tr>
+              <td>{{ r.driver }}</td>
+              <td><code> {{ r.dataOfStartRoute }} </code></td>
+              <td>{{ r.summ }}</td>
+               <th>{{ r.allowed}} </th>
+               <th>{{ r.text}} </th>
+          </tr>
+            {% endfor %}
+        </thead>
+
+    </table>
+</div>
+</body>
+
+</html>
